@@ -8,6 +8,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    
 </head>
 
 <body>
@@ -17,9 +18,9 @@
             <hr>
             <h1>Cadastrar</h1>
             <hr>
-            <form class="f_cadastrar" action="">
+            <form name="f_cadastrar" class="f_cadastrar" action="">
                 <label for="name">Nome:</label><br>
-                <input type="text" name="name" placeholder="Nome">
+                <input type="text" name="name" id="name" placeholder="Nome">
 
                 <label for="cpf">Cpf:</label><br>
                 <input type="text" name="cpf" placeholder="Cpf">
@@ -35,12 +36,13 @@
 
 
 
-                <button type="submit">Cadastrar</button>
+                <button type="submit"  onclick=" return cadastrar()" >Cadastrar</button>
                 <button>Login</button>
             </form>
             <hr>
         </div>
     </div>
+    
 </body>
 
 </html>
